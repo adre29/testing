@@ -1,2 +1,2 @@
-# testing
-Testing my new website
+# my-website
+My new website coded from scratch

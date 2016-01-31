@@ -1,0 +1,350 @@
+/***********
+GENERAL
+**********/
+
+
+body { 
+    border-top: solid 8px #222222;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+nav a{
+    
+text-decoration: none;
+color: #222;
+-webkit-transition: .5s;
+-o-transition: .5s;
+-moz-transition: .5s;
+transition: .5s;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper{
+    padding: 1% 6%;
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.page-divider{
+    border-top: solid 1px #efefef;
+    height: 10px;
+    width: auto;
+    padding: 0 3%;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: lato;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: -4px;
+}
+
+h2{
+    font-family: lato;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0;
+    text-transform: uppercase;
+    color: #959595;
+    letter-spacing: 0.2em;
+}
+
+p{
+    font-family: open sans;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: #b0b0b0;
+    
+}
+
+/***********
+HEADING
+**********/
+
+header{
+  
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    clear: both;
+    height: 120px;
+}
+
+#logo{
+    width: 23%;
+    float: left;
+    padding-left:13%; 
+}
+
+#logo img {
+    height: 100px;
+    width: auto;
+}
+
+
+/***********
+NAVIGATION
+**********/
+
+#menu{
+    width: 50%;
+    float: right;
+    padding-right: 12%;
+    margin-top: 3%;
+   
+    
+}
+
+
+nav ul{
+    
+    overflow: hidden;
+    text-align: right;
+    margin: 0;
+    font-family: lato;
+    -webkit-transition: max-height 0.4s;
+    -ms-transition: max-height 0.4s;
+    -moz-transition: max-height 0.4s;
+    -o-transition: max-height 0.4s;
+    transition: max-height 0.4s;
+    letter-spacing: 0.2em;
+    font-size: 0.69em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0;
+    list-style: none;
+    
+    
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+a:hover{
+    color: #d3d3d3;
+   
+    }
+
+
+
+.handle {
+    width: 100%;
+    background: #222;
+    text-align: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: white;
+    display: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    
+}
+
+/***********
+GALLERY
+**********/
+
+#text_space_mobile{
+    display: none;
+}
+
+#gallery{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+#gallery li{
+    float: left;
+    width: 32.33%;
+    margin: 0.25% 0.5%;
+    padding: 0;
+    
+  }
+
+
+#gallery li:nth-child(4n) { 
+    clear:left;} /**eliminates the gap that appears in gallery li****/
+
+
+#gallery li:nth-child(8n) { 
+    clear:right;}
+
+#gallery img {
+    background: black;
+}
+
+
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 90px;
+	clear: both;
+}
+
+.roll{
+   opacity: 1;
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+   -o-transition: opacity .5s ease-in-out;
+}
+
+.roll:hover {
+      opacity: 0.70;
+      }
+
+/***********
+GALLERY PAGES
+**********/
+
+.image{
+    padding: 1% 1% 3% 1%;
+}
+
+#image_space{
+    
+    width: 65%;
+    float: left;
+    margin-bottom: 3%;
+}
+
+#text_space{
+    
+    width: 35%;
+    float: right;
+    padding: 1% 3%  ;
+    box-sizing: border-box
+}
+
+#text_space p {
+    padding-top: 5%;
+}
+
+#text_space_mobile p {
+    padding-top: 5%;
+}
+
+#gallery_nav{
+    clear: both;
+    padding: 1%;
+}
+
+#gallery_nav a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #222;
+}
+
+#gallery_controls{
+    float: right;
+}
+
+.project-disabled {
+    opacity: 0.5;
+    pointer-events: none; /*disables link*/
+}
+
+
+/***********
+ABOUT ME PAGE
+**********/
+
+.my_photo{
+    padding: 3% 3%;
+}
+
+#about_image{
+    
+    width: 40%;
+    float: left;
+}
+
+#about_text{
+    
+    width: 60%;
+    float: right;
+    padding: 1% 3%  ;
+    box-sizing: border-box
+}
+
+#gallery_nav{
+    clear: both;
+    padding: 1%;
+}
+
+#gallery_nav a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #222;
+}
+
+
+/***********
+FORM
+**********/
+
+form{
+    width: 55%;
+    float: right;
+    padding: 3% 4%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+input{
+    background-color: #d2d2d2;
+    display: block;
+    margin: 2% auto;
+    padding: 2%;
+    width: 60%;
+}
+
+textarea{
+    background-color: #d2d2d2;
+    display: block;
+    margin: 2% auto;
+    padding: 2%;
+    width: 60%;
+}
+
+
+
+/***********
+FOOTER
+**********/
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 90px;
+	clear: both;
+	background-color: #ffffff;
+}
+
+#footer {
+	bottom:0;
+   	width:100%;
+    display:block;
+  
+}
